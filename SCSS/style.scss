@@ -1,0 +1,12 @@
+@import "./reset";
+@import "./variables";
+@import "./header";
+@import "./index_main";
+@import "./footer";
+
+
+main {
+    max-width: 1920px;
+    width: $max-width;
+    margin: auto;
+}

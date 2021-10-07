@@ -1,0 +1,44 @@
+footer {
+    background-color: black;
+    color: white;
+
+}
+
+.newsletter {
+    margin-top: 4rem;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .txt {
+
+        h2 {
+            @include fontSW-LH(38px, 500, 50px);
+        }
+
+        p {
+            @include fontSW-LH(16px, 400, 22px);
+            padding-top: .5rem;
+
+        }
+    }
+
+    form {
+        overflow: hidden;
+    }
+
+    input {
+        background-color: transparent;
+        border: 2px solid $colour-3;
+        height: 1.5rem;
+        // border-radius: 10px;
+    }
+
+    button {
+        background-color: $colour-3;
+        padding: 18px 2rem 19px;
+        @include fontSW-LH(18px, 500, 22px);
+
+    }
+}

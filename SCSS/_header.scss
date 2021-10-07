@@ -1,0 +1,64 @@
+.topBar_container {
+    background: #020202;
+
+    .topBar {
+        height: 44px;
+        max-width: 1920px;
+        width: $max-width;
+        margin: auto;
+        @include flexDJIW(row, space-between, center);
+        color: white;
+
+        p,
+        span {
+            @include fontSW-LH(12px, 600, 18px);
+        }
+
+        span {
+            color: $colour-5;
+        }
+    }
+}
+
+.topBar_container_ {
+    border-bottom: 2px solid $colour-6;
+
+    .topBar {
+        height: 92px;
+        max-width: 1920;
+        width: $max-width;
+        margin: auto;
+        @include flexDJIW(row, space-between, center);
+
+        .categories {
+            a {
+                @include fontSW-LH(14px, 600, 21px);
+                margin-right: 25px;
+            }
+
+            .a-hight {
+                color: $colour-3;
+                padding: 8px 26px;
+                border: 2px solid $colour-3;
+                box-sizing: border-box;
+                border-radius: 50px;
+            }
+        }
+
+        .action-button {
+            display: flex;
+            align-items: center;
+
+            a {
+                padding: 0 20px;
+
+            }
+
+            .userProfile img {
+                height: 36px;
+                width: 36px;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,142 @@
+.cover {
+    img {
+        width: 1398px;
+        height: 328px;
+    }
+}
+
+.product-cat-heading {
+    margin: 37px 0 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    h2 {
+        @include fontSW-LH(22px, 600, 33px);
+    }
+
+    p {
+        @include fontSW-LH(13px, 400, 15px);
+        color: $colour-3;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+}
+
+.productCard {
+    cursor: pointer;
+    width: 186px;
+    padding: 0 25px;
+
+    .stock {
+        padding: 8px;
+        @include fontSW-LH(12px, 600, 21px);
+        text-align: center;
+    }
+
+    .out {
+        color: $colour-8;
+    }
+
+    .in {
+        color: $colour-9;
+    }
+
+    img {
+        margin: auto;
+        padding: 15px 0;
+        width: 150px;
+        height: 150px;
+    }
+
+    h2 {
+        @include fontSW-LH(13px, 400, 20px);
+    }
+
+    .price {
+        margin: .5rem 0;
+    }
+
+    .price span {
+        color: $colour-10;
+        padding-right: .5rem;
+        text-decoration: line-through;
+    }
+
+    p {
+        @include fontSW-LH(18px, 600, 25px);
+        color: $colour-7;
+    }
+
+    .addToCart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: solid $colour-3 3px;
+        // border-radius: 50px;
+        // padding: 0 20px;
+        // width: 150px;
+        margin-bottom: .25rem;
+
+        p {
+            color: $colour-3;
+            @include fontSW-LH(14px, 600, 21px);
+
+        }
+
+        img {
+            height: 17px;
+            width: 19px;
+            margin: 0;
+            padding-right: 10px;
+        }
+
+        display: none;
+    }
+
+    &:hover {
+
+        .addToCart {
+            display: flex;
+        }
+
+        transform: scale(1.1);
+        box-shadow: (0px 5px 15px rgba(0, 0, 0, 0.14));
+    }
+
+    margin-bottom: 2rem;
+}
+
+
+.product-grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.product-grid-container_ {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    .banner {
+        columns: 1/2;
+        cursor: pointer;
+
+        img {
+            width: 320px;
+            height: 320px;
+            margin-right: 3rem;
+
+            &:hover {
+                // transform: scale(1.1);
+                box-shadow: (0px 5px 15px rgba(0, 0, 0, 0.14));
+            }
+
+        }
+
+    }
+}
