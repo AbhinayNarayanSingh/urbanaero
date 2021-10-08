@@ -34,6 +34,10 @@
             a {
                 @include fontSW-LH(14px, 600, 21px);
                 margin-right: 25px;
+
+                &:hover {
+                    color: $colour-3;
+                }
             }
 
             .a-hight {
@@ -60,5 +64,27 @@
             }
 
         }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .topBar_container_ {
+        .topBar {
+
+            .categories {
+                display: none;
+
+
+            }
+        }
+    }
+
+    .userProfile {
+        display: none;
+    }
+
+
+    .ham-menu {
+        padding-left: 20px;
     }
 }

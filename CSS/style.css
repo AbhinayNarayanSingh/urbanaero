@@ -198,7 +198,7 @@ button {
 .topBar_container .topBar {
   height: 44px;
   max-width: 1920px;
-  width: 1400px;
+  width: 90%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,7 +236,7 @@ button {
 .topBar_container_ .topBar {
   height: 92px;
   max-width: 1920;
-  width: 1400px;
+  width: 90%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,6 +260,10 @@ button {
   font-weight: 600;
   line-height: 21px;
   margin-right: 25px;
+}
+
+.topBar_container_ .topBar .categories a:hover {
+  color: #0156FF;
 }
 
 .topBar_container_ .topBar .categories .a-hight {
@@ -289,9 +293,24 @@ button {
   width: 36px;
 }
 
+@media screen and (max-width: 500px) {
+  .topBar_container_ .topBar .categories {
+    display: none;
+  }
+  .userProfile {
+    display: none;
+  }
+  .ham-menu {
+    padding-left: 20px;
+  }
+}
+
+.cover {
+  margin: auto;
+}
+
 .cover img {
-  width: 1398px;
-  height: 328px;
+  width: 100%;
 }
 
 .product-cat-heading {
@@ -328,7 +347,7 @@ button {
   cursor: pointer;
   width: 186px;
   padding: 0 25px;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 .productCard .stock {
@@ -406,10 +425,9 @@ button {
 }
 
 .productCard:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
   -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.14);
           box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.14);
+  margin-top: 0;
 }
 
 .productCard:hover .addToCart {
@@ -436,6 +454,7 @@ button {
   -webkit-columns: 1/2;
           columns: 1/2;
   cursor: pointer;
+  margin: 2rem 0;
 }
 
 .product-grid-container_ .banner img {
@@ -447,6 +466,19 @@ button {
 .product-grid-container_ .banner img:hover {
   -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.14);
           box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.14);
+  margin-top: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .product-grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .productCard {
+    padding: 0 15px;
+  }
 }
 
 footer {
@@ -498,8 +530,23 @@ footer {
   line-height: 22px;
 }
 
+.copyright {
+  padding: 2rem 0 4rem;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  color: #A2A6B0;
+}
+
 main {
   max-width: 1920px;
-  width: 1400px;
+  width: 90%;
   margin: auto;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    width: 100%;
+  }
 }

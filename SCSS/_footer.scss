@@ -42,3 +42,10 @@ footer {
 
     }
 }
+
+.copyright {
+    padding: 2rem 0 4rem;
+    text-align: center;
+    @include fontSW-LH(10px, 500, 14px);
+    color: $colour-5;
+}
