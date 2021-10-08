@@ -106,10 +106,10 @@
         }
 
         box-shadow: (0px 5px 15px rgba(0, 0, 0, 0.14));
-        margin-top: 0;
+        margin: 2rem 0 0;
     }
 
-    margin: 2rem 0;
+    margin: 4rem 0 2rem;
 }
 
 
@@ -144,11 +144,18 @@
     }
 }
 
+.ham-menu {
+    display: none;
+}
 
 @media screen and (max-width: 500px) {
     .product-grid-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ham-menu {
+        display: block;
     }
 
     .productCard {
