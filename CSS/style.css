@@ -659,6 +659,127 @@ footer {
       grid-template-columns: repeat(5, 1fr);
 }
 
+.popup-container {
+  top: 0;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100vw;
+  height: 100vh;
+}
+
+.popup-container .popup {
+  background-color: #F5F7FF;
+  min-height: 615px;
+  width: 920px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.14);
+}
+
+.popup-container .popup .header {
+  padding: 1rem 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-bottom: 2px solid #CACDD8;
+}
+
+.popup-container .popup .header .action {
+  margin: 1rem 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popup-container .popup .header .action .add-to-cart, .popup-container .popup .header .action .add-to-wishlist {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  padding: 0.65rem 1.5rem;
+  background-color: #0156FF;
+  color: white;
+  border-radius: 50px;
+  margin: 0 1rem;
+}
+
+.popup-container .popup .header .action .add-to-wishlist {
+  background-color: #ffb800;
+}
+
+.popup-container .popup .header .action .cancel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.body {
+  padding: 2rem 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.body .product-dis {
+  padding-right: 2rem;
+}
+
+.body .product-dis h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.body .product-dis .price {
+  margin: 0.5rem 2rem 0.5rem 0;
+}
+
+.body .product-dis .price span {
+  color: #666666;
+  padding-right: 0.5rem;
+  text-decoration: line-through;
+}
+
+.body .product-dis p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #000000;
+}
+
+.body .product-dis .product-short-dis p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.body .product-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 main {
   max-width: 1920px;
   width: 90%;
