@@ -700,6 +700,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 1rem;
 }
 
 .popup-container .popup .header .action .add-to-cart, .popup-container .popup .header .action .add-to-wishlist {
@@ -715,19 +716,6 @@ footer {
 
 .popup-container .popup .header .action .add-to-wishlist {
   background-color: #ffb800;
-}
-
-.popup-container .popup .header .action .cancel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 21px;
-  cursor: pointer;
 }
 
 .body {
@@ -778,6 +766,19 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.cancel-toggel i {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 0;
+  padding: 0.5rem 1rem;
+  color: #CACDD8;
+  cursor: pointer;
+}
+
+.cancel-toggel i:hover {
+  color: #666666;
 }
 
 main {

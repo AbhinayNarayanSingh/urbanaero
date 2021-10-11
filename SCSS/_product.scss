@@ -22,6 +22,7 @@
       .action {
         margin: 1rem 0 2rem;
         display: flex;
+        padding-right: 1rem;
 
         .add-to-cart {
           @include fontSW-LH(14px, 600, 21px);
@@ -34,12 +35,6 @@
         .add-to-wishlist {
           @extend .add-to-cart;
           background-color: #ffb800;
-        }
-        .cancel {
-          display: flex;
-          align-items: center;
-          @include fontSW-LH(16px, 600, 21px);
-          cursor: pointer;
         }
       }
     }
@@ -81,5 +76,17 @@
   .product-img {
     display: flex;
     justify-content: center;
+  }
+}
+
+.cancel-toggel i {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 0;
+  padding: 0.5rem 1rem;
+  color: $colour-6;
+  cursor: pointer;
+  &:hover {
+    color: $colour-10;
   }
 }
