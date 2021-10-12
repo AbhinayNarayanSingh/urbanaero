@@ -1,48 +1,47 @@
-.popup-container {
-  top: 0;
-  position: fixed;
-  background-color: rgba($color: #ffffff, $alpha: 0.5);
-  width: 100vw;
-  height: 100vh;
-  .popup {
-    background-color: $colour-1;
-    min-height: 615px;
-    width: 920px;
-    @include position("center");
-    box-shadow: (0px 5px 15px rgba(0, 0, 0, 0.14));
-
-    .header {
-      padding: 1rem 2rem 0;
+.popup {
+  .header {
+    padding: 1rem 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: white;
+    // background-color: $colour-1;
+    // border-bottom: 2px solid $colour-6;
+    .catalog-cat-heading {
+      margin-bottom: 3rem;
+    }
+    .action {
+      margin: 1rem 0 2rem;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: white;
-      border-bottom: 2px solid $colour-6;
+      padding-right: 1rem;
 
-      .action {
-        margin: 1rem 0 2rem;
-        display: flex;
-        padding-right: 1rem;
-
-        .add-to-cart {
-          @include fontSW-LH(14px, 600, 21px);
-          padding: 0.65rem 1.5rem;
-          background-color: $colour-3;
-          color: white;
-          border-radius: 50px;
-          margin: 0 1rem;
-        }
-        .add-to-wishlist {
-          @extend .add-to-cart;
-          background-color: #ffb800;
-        }
+      .add-to-cart {
+        @include fontSW-LH(14px, 600, 21px);
+        padding: 0.65rem 1.5rem;
+        background-color: $colour-3;
+        color: white;
+        border-radius: 50px;
+        margin: 0 1rem;
+      }
+      .add-to-wishlist {
+        @extend .add-to-cart;
+        background-color: #ffb800;
+      }
+    }
+  }
+  .query {
+    margin-top: 2rem;
+    p {
+      a {
+        color: $colour-3;
+        @include fontSW-LH(18px, 600, 25px);
       }
     }
   }
 }
 
 .body {
-  padding: 2rem 4rem;
+  padding: 4rem;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -67,8 +66,14 @@
       color: $colour-7;
     }
     .product-short-dis {
+      margin-top: 2rem;
+      h2 {
+        @include fontSW-LH(18px, 500, 24px);
+        padding-bottom: 0.5rem;
+      }
       p {
         @include fontSW-LH(14px, 400, 24px);
+        padding-left: 0.5rem;
       }
     }
   }
@@ -76,17 +81,8 @@
   .product-img {
     display: flex;
     justify-content: center;
-  }
-}
-
-.cancel-toggel i {
-  font-size: 1.5rem;
-  position: absolute;
-  right: 0;
-  padding: 0.5rem 1rem;
-  color: $colour-6;
-  cursor: pointer;
-  &:hover {
-    color: $colour-10;
+    max-width: 500px;
+    max-height: 500px;
+    overflow: hidden;
   }
 }

@@ -5,15 +5,15 @@
 @import "./footer";
 @import "./catalog";
 @import "./product";
-
+@import "./cart";
 
 main {
-    max-width: 1920px;
-    width: $max-width;
+  max-width: 1920px;
+  width: $max-width;
 
-    @media screen and (max-width: 500px) {
-        width: 100%;
-    }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
 
-    margin: auto;
+  margin: auto;
 }

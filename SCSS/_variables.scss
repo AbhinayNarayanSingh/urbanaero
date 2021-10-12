@@ -1,49 +1,65 @@
-$colour-1:#F5F7FF;
-$colour-2: linear-gradient(180deg, #0074BE 0%, #005EAD 50.52%, #003189 100%);
-$colour-3:#0156FF;
-$colour-4:#01A4FF;
-$colour-5:#A2A6B0;
-$colour-6:#CACDD8;
-$colour-7:#000000;
-$colour-8:#C94D3F;
-$colour-9:#78A962;
-$colour-10:#666666;
+$colour-1: #f5f7ff;
+$colour-2: linear-gradient(180deg, #0074be 0%, #005ead 50.52%, #003189 100%);
+$colour-3: #0156ff;
+$colour-4: #01a4ff;
+$colour-5: #a2a6b0;
+$colour-6: #cacdd8;
+$colour-7: #000000;
+$colour-8: #c94d3f;
+$colour-9: #78a962;
+$colour-10: #666666;
+
+$border-1: 2px solid $colour-6;
 
 // $max-width: 1400px;
 $max-width: 90%;
 $cover-image-width: 100%;
 
-
-
-
-
-@mixin flexDJIW($flexDir:row, $justifycontent:flex-start, $alignitems:stretch, $flexwrap:wrap) {
-    display: flex;
-    flex-direction: $flexDir;
-    justify-content: $justifycontent;
-    align-items: $alignitems;
-    flex-wrap: $flexwrap;
+@mixin flexDJIW(
+  $flexDir: row,
+  $justifycontent: flex-start,
+  $alignitems: stretch,
+  $flexwrap: wrap
+) {
+  display: flex;
+  flex-direction: $flexDir;
+  justify-content: $justifycontent;
+  align-items: $alignitems;
+  flex-wrap: $flexwrap;
 }
 
-@mixin fontSW-LH($key1:1rem, $key2:400, $key3:normal) {
-    font-size: $key1;
-    font-weight: $key2;
-    line-height: $key3;
+@mixin fontSW-LH(
+  $key1: 1rem,
+  $key2: 400,
+  $key3: normal,
+  $key4: $key1,
+  $key5: $key2,
+  $key6: $key3
+) {
+  font-size: $key1;
+  font-weight: $key2;
+  line-height: $key3;
+
+  @media screen and (max-width: 500px) {
+    font-size: $key4;
+    font-weight: $key5;
+    line-height: $key6;
+  }
 }
 
 @mixin position($key) {
-    @if $key=='father' {
-        position: relative;
-    }
+  @if $key== "father" {
+    position: relative;
+  }
 
-    @if $key=='child' {
-        position: absolute;
-    }
+  @if $key== "child" {
+    position: absolute;
+  }
 
-    @if $key=='center' {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+  @if $key== "center" {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

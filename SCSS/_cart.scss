@@ -1,0 +1,62 @@
+.list-heading {
+  @include fontSW-LH(14px, 600, 21px);
+}
+.list-row {
+  padding-top: 0.25rem;
+  @include fontSW-LH(16px, 600, 24px);
+  span i {
+    font-size: 0.75rem;
+    margin: 0 1rem;
+  }
+}
+
+td {
+  min-width: 50px;
+  padding: 0 1rem;
+}
+tbody {
+  padding-top: 1rem;
+}
+
+$grid-column-size: 300px repeat(3, 150px) 50px;
+
+.shopping-cart-list-heading {
+  display: grid;
+  grid-template-columns: $grid-column-size;
+  border-bottom: $border-1;
+  padding-bottom: 0.5rem;
+
+  h2 {
+    text-align: center;
+    width: 150px;
+    padding-right: 1rem;
+    &:nth-of-type(1) {
+      text-align: left;
+      width: 300px;
+    }
+    &:nth-of-type(4) {
+      grid-column: 4/6;
+    }
+  }
+}
+
+.shopping-cart-list-row {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: $grid-column-size;
+  p {
+    text-align: center;
+    width: 150px;
+    padding-right: 1rem;
+  }
+  .p-title {
+    @extend .list-row;
+    text-align: left;
+    width: 300px;
+    @include fontSW-LH(16px, 500, 24px);
+  }
+}
+
+.shopping-list-body {
+  width: 850px;
+}
