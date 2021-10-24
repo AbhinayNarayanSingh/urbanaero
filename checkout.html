@@ -57,62 +57,71 @@
 </header>
 <main>
     <div class="catalog-cat-heading">
-        <h2>Home <span>›</span>Shopping Cart </h2>
+        <h2>Home<span>›</span>Shopping Cart<span>›</span>Checkout Process</h2>
     </div>
     <div class="product-cat-heading">
-        <h2>Shopping Cart</h2>
+        <h2>Checkout</h2>
     </div>
+
+    <div class="sub-cat-heading">
+    <h2>Shipping Address</h2>
+    </div>
+
+
+    <form action="" class="checkout-form">
     
-    <div class="cart-conatiner">
-
-        <div class="shopping-list-body">
-            <div class="shopping-cart-list-heading" >
-                <h2 class="list-heading">Item</h2>
-                <h2 class="list-heading">Price</h2>
-                <h2 class="list-heading">Qty</h2>
-                <h2 class="list-heading">Subtotal</h2>
-            </div>
-                
-            <div class="shopping-cart-list-row" >
-                <div class="cart-pd">
-                    <div class="pd-img"><img src="./img/assets/product/image.png" alt=""></div>
-                    <p class="p-title">MSI MPG Trident 3 16GB RAM, 1TB SSD, Win 10 </p>
-                </div>
-                <p class="list-row">$1499.00</p>
-                <p class="list-row"><span><a href=""><i class="fas fa-plus"></i></a></span>2<span><a href=""><i class="fas fa-minus"></i></a></span></p>
-                <p class="list-row">$2999.00</p>
-                <p class="list-row"><a href=""><i class="far fa-trash-alt"></i></a></p>
-            </div>
-
-
-
-            <a href="" class="drop-cart">Clear Shopping Cart</a>
-
-        </div>
         
-        <div class="summary">
-            <h3>Order Summary</h3>
-            <div class="sub-lines">
-                <p>Subtotal</p>
-                <p>$2999.00</p>
-            </div>
-            <div class="sub-lines">
-                <p>Shipping </p>
-                <p>$10.50</p>
-            </div>
-            <div class="sub-lines">
-                <p>Tax (10%)</p>
-                <p>$299.00</p>
-            </div>
-            <div class="sub-lines">
-                <p>Order Total</p>
-                <h2>$3,309.40</h2>
-            </div>
+        <p>Name <span>*</span></p>
+        <input type="text" name="" id="">
+        <p>Email<span> *</span></p>
+        <input type="text" name="" id="">
+        <p>Phone Number<span> *</span></p>
+        <input type="text" name="" id="">
+        <p>Street Address <span>*</span></p>
+        <textarea name=""></textarea>
+        <p>Zip/Postal Code <span> *</span></p>
+        <input type="text" name="" id="">
+        <p>City<span> *</span></p>
+        <input type="text" name="" id="">
+        <p>State/Province <span> *</span></p>
+        <input type="text" name="" id="">
+        <p>Country<span> *</span></p>
+        <input type="text" name="" id="">
+        
+    </form>
+    
+    <div class="sub-cat-heading">
+    <h2>Payment Method</h2>
+</div>
 
-            <a href="./checkout.html" class="checkout-btn">Proceed to Checkout</a>
-        </div>
+    <div class="checkout-form ">
+        <form action="" class="payment-method">
+            <div>
+                <input type="radio" name="payment-method" id="cod">
+                <label for="cod">Pay on delivery</label>
+            </div>
+            <!-- <div>
+                <input type="radio" name="payment-method" id="card">
+                <label for="card">Credit/Debit card</label>
+            </div>
+            <div>
+                <input type="radio" name="payment-method" id="upi">
+                <label for="upi">Unified Payment Interface (UPI)</label>
+            </div> -->
+            
+            <button type="submit">Place Order</button>
+            
+        </form>
+        
     </div>
 </main>
+
+
+
+
+
+
+
 
 </body>
 </html>

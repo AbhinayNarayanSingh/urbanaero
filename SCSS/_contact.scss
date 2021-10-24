@@ -1,0 +1,49 @@
+.contact-det {
+  p {
+    @include fontSW-LH(16px, 300, 30px);
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
+  p {
+    @include fontSW-LH(13px, 600, 27px);
+    padding: 0.5rem 0;
+    span {
+      color: $colour-8;
+    }
+  }
+  input {
+    width: 25%;
+    border: 2px solid $colour-5;
+    border-radius: 4px;
+  }
+  textarea {
+    border: 2px solid $colour-5;
+    border-radius: 4px;
+    width: 50%;
+    height: 200px;
+    padding: 1rem 24px;
+  }
+  button {
+    @include fontSW-LH(14px, 600, 21px);
+    padding: 0.65rem 1.5rem;
+    background-color: $colour-3;
+    color: white;
+    border-radius: 50px;
+    margin-top: 1.5rem;
+    width: 115px;
+  }
+  input[type="radio"] {
+    width: 100px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+}
+
+.payment-method {
+  display: flex;
+  flex-direction: column;
+}
